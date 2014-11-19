@@ -1,0 +1,39 @@
+<html>
+<script type="text/javascript" src="jquery.js">
+</script>
+<script>
+function myFunction()
+{
+$.ajax({
+	url: "http://api.espn.com/v1/sports/soccer",
+	data: {
+		// enter your developer api key here
+		apikey: "dj8m25y2ze94hqsjb2era2t5",
+		// the type of data you're expecting back from the api
+		_accept: "application/json"
+	},
+	dataType: "jsonp",
+	success: function(data) {
+		$.each(data.sports[0].leagues, function() {
+			var name = this.name;
+			var id = this.id;
+			var sname=this.shortName;
+			var title = this.abbreviation;
+			var datatring = 'League_name=' + name + '&League_id=' + id + '&abbrevation=' + title + '&shortName=' + sname ;    
+		$.ajax({  
+      type: "POST",  
+       url: "insert_League.php",  
+       data: datatring,
+	 
+}); 
+});
+	},
+});
+}
+</script>
+<body>
+asd
+Arjit
+<button type="button" onclick="myFunction()">Try it</button>
+</body>
+<html>

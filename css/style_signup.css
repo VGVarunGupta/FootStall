@@ -1,0 +1,259 @@
+body{
+	font-family: 'Raleway', sans-serif;
+	background: url('../images/1.jpg');
+	background-repeat: repeat;
+	background-size: cover;
+	font-size: 0.9em;
+	color: #5491ae;
+	-webkit-font-smoothing: antialiased;
+}
+
+span{
+	color: #5491ae;
+}
+
+#blank_field{
+	width: 270px;
+	position: relative;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+}
+
+#blank_label{
+	width: 100%;
+	left: -100%;
+	top: -2%;
+	position: absolute;
+	float: left;
+}
+
+.label{
+	height: 25px;
+	font-size: 1.2em;
+	color: #FFF;
+	-webkit-font-smoothing: antialiased;
+	text-align: right;
+	margin: 14px 0px 27px 0px;
+}
+
+.field{
+	height: 25px;
+	width: 258px;
+	background: rgba(0,0,0,0);
+	font-size: 0.8em;
+	color: #b5b5b5;
+	border: 1px solid #fff;
+	padding: 5px;
+	margin: 3px 0px 10px 0px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.date{
+	height: 38px;
+	width: 57px;
+	background: rgba(0,0,0,0);
+	border: 1px solid #fff;
+	padding: 5px;
+	font-size: 0.8em;
+	margin: 3px 0px 10px 0px;
+	color: #b5b5b5;
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.month{
+	height: 38px;
+	width: 128px;
+	background: rgba(0,0,0,0);
+	border: 1px solid #fff;
+	padding: 5px;
+	font-size: 0.8em;
+	color: #b5b5b5;
+	margin: 3px 0px 10px 0px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease;	
+}
+
+.year{
+	height: 38px;
+	width: 75px;
+	background: rgba(0,0,0,0);
+	border: 1px solid #fff;
+	padding: 5px;
+	font-size: 0.8em;
+	color: #b5b5b5;
+	margin: 3px 0px 10px 0px;
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.hrule{
+	size: 1px;
+	width: 270px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.note{
+	position: relative;
+	padding: 5px 15px 5px 10px;
+	text-align: center;
+}
+
+.social{
+	border-radius: 50%;
+	position: relative;
+	//margin: 1% 5% 0% 8%;
+        margin-left:106px;
+        height: 50px;
+	width: 50px;
+	float: left;
+        -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+}
+
+.social:active{
+	top:2px;
+}
+
+.field:hover{
+	border: 1px inset #038eb8;
+}
+
+.date:hover{
+	border: 1px inset #038eb8;
+}
+
+.month:hover{
+	border: 1px inset #038eb8;
+}
+
+.year:hover{
+	border: 1px inset #038eb8;
+}
+
+.error{	
+	text-align: center;
+	color: red;
+}
+
+.bck{
+	color: #038eb8;
+	background: #1f1f1f;
+}
+
+#alert{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-shadow: 1px 1px #000000;
+	background: url('d.jpg');
+	font-size: 1.1em;
+	color: #b5b5b5;
+	position:absolute;
+	z-index: -1;
+	padding: 50px 20px 50px 20px;
+	box-shadow: 10px 10px 10px #000;
+	border-radius: 5px;
+	border: 2px outset #1f1f1f;
+	left:25%;
+        right:25%;
+	visibility: hidden;
+}
+
+#mailver{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-shadow: 1px 1px #000000;
+	background: url('d.jpg');
+	font-size: 1.1em;
+	color: #b5b5b5;
+	position:absolute;
+	z-index: -1;
+	padding: 50px 20px 50px 20px;
+	box-shadow: 10px 10px 10px #000;
+	border-radius: 5px;
+	border: 2px outset #1f1f1f;
+	left:25%;
+        right:25%;
+	visibility: hidden;
+}
+
+#share{
+	position: absolute;
+	left: 180%;
+	top: 110%;
+}
+
+
+.headingshome{
+	color: #b5b5b5;
+	opacity : 75%;	
+}
+
+#center_box{
+	position:absolute;
+	top:31%;
+	left:38%;
+	width:23%;
+	height:23%;
+	padding:30px;
+	background: rgba (0,0,0,0.9);
+}
+
+.help{
+        position: relative;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        text-shadow: 1px 1px #000000;
+        font-size: 0.7em;
+        color: #ff0000;
+        text-align: center;
+        margin-top: 60px;
+        cursor: pointer;
+}
+
+
+.foot{
+	margin: 200px -12px -8px -12px;
+	background: #010101;
+	line-height: 25px;
+	padding: 10px;
+	width: 100%;
+	display: -webkit-inline-box;
+}
+
+#text{
+	position: relative;
+	margin: 0px auto;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+}
+
+.fav{
+	height: 35px;
+	width: 270px;
+	background: rgba(0,0,0,0);
+	font-size: 0.8em;
+	color: #b5b5b5;
+	border: 1px solid #fff;
+	padding: 5px;
+	margin: 3px 0px 15px 0px;
+}
+
+.fav:hover{
+	border: 1px inset #038eb8;
+}
+

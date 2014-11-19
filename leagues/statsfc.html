@@ -1,0 +1,110 @@
+<html>
+<!-- Place in the <head> of your page -->
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<link rel="stylesheet" href="//api.statsfc.com/widget/table.css">
+<script src="//api.statsfc.com/widget/table-2.0.min.js"></script>
+
+<!-- For the Fixtures Stats -->
+
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<link rel="stylesheet" href="//api.statsfc.com/widget/fixtures.css">
+<script src="//api.statsfc.com/widget/fixtures-2.0.min.js"></script>
+
+<!-- For the Live Match Stats -->
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<link rel="stylesheet" href="//api.statsfc.com/widget/live.css">
+<script src="//api.statsfc.com/widget/live-2.0.min.js"></script>
+
+<!-- For the Team Form Stats -->
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<link rel="stylesheet" href="//api.statsfc.com/widget/form.css">
+<script src="//api.statsfc.com/widget/form-2.0.min.js"></script>
+
+<!-- For the Result Stats -->
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<link rel="stylesheet" href="//api.statsfc.com/widget/results.css">
+<script src="//api.statsfc.com/widget/results-2.0.min.js"></script>
+
+<!-- For top Scorers -->
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<link rel="stylesheet" href="//api.statsfc.com/widget/top-scorers.css">
+<script src="//api.statsfc.com/widget/top-scorers-2.0.min.js"></script>
+<body>
+<div id="statsfc-table"></div>
+<div id="statsfc-fixtures"></div>
+<div id="statsfc-results"></div>
+<div id="statsfc-live"></div>
+<div id="statsfc-form"></div>
+<div id="statsfc-top-scorers"></div>
+<div id="statsfc-next-fixture"></div>
+
+
+<!-- For the Table Stats -->
+<script>
+    var table = new StatsFC_Table('_6VPnNqK4oHY7tDM4IMTTOxkjdIefZwNbPYhQTbw');
+    table.competition = 'premier-league';
+    table.tableType = 'full';
+    table.highlight = 'Chelsea';
+    table.showBadges = true;
+    table.display('statsfc-table');
+</script>
+<!-- For the Fixtures Stats -->
+<script>
+    var fixtures = new StatsFC_Fixtures('_6VPnNqK4oHY7tDM4IMTTOxkjdIefZwNbPYhQTbw');
+    fixtures.competition = 'premier-league';
+    fixtures.highlight = 'West Bromwich Albion';
+    fixtures.team = 'West Bromwich Albion';
+    fixtures.showBadges = true;
+    fixtures.display('statsfc-fixtures');
+</script>
+<!-- For the Result Stats -->
+<script>
+    var results = new StatsFC_Results('_6VPnNqK4oHY7tDM4IMTTOxkjdIefZwNbPYhQTbw');
+    results.competition = 'premier-league';
+    results.highlight = 'West Bromwich Albion';
+    results.team = 'West Bromwich Albion';
+    results.goals = true;
+    results.cards = true;
+    results.showBadges = true;
+    results.display('statsfc-results');
+</script>
+<!-- For the Live Match Stats -->
+<script>
+var live = new StatsFC_Live('_6VPnNqK4oHY7tDM4IMTTOxkjdIefZwNbPYhQTbw');
+    live.competition = 'premier-league';
+    live.highlight = 'West Bromwich Albion';
+    live.team = 'West Bromwich Albion';
+    live.goals = true;
+    live.cards = true;
+    live.showBadges = true;
+    live.display('statsfc-live');
+</script>
+<!-- For the Team Form Stats -->
+<script>
+    var form = new StatsFC_Form('_6VPnNqK4oHY7tDM4IMTTOxkjdIefZwNbPYhQTbw');
+    form.highlight = 'West Bromwich Albion';
+    form.showBadges = true;
+    form.showScore = true;
+    form.display('statsfc-form');
+</script>
+<!-- For the Top Scorers Stats -->
+<script>
+    var topScorers = new StatsFC_TopScorers('_6VPnNqK4oHY7tDM4IMTTOxkjdIefZwNbPYhQTbw');
+    topScorers.competition = 'premier-league';
+    topScorers.highlight = 'West Bromwich Albion';
+    topScorers.showBadges = true;
+    topScorers.display('statsfc-top-scorers');
+</script>
+<!-- For the Live Demo -->
+<script>
+    var nextFixture = new StatsFC_NextFixture('_6VPnNqK4oHY7tDM4IMTTOxkjdIefZwNbPYhQTbw');
+    nextFixture.team = 'West Bromwich Albion';
+    nextFixture.display('statsfc-next-fixture');
+</script>
+
+<!-- For The Next Fixtures -->
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<link rel="stylesheet" href="//api.statsfc.com/widget/next-fixture.css">
+<script src="//api.statsfc.com/widget/next-fixture-1.0.min.js"></script>
+</body>
+</html>

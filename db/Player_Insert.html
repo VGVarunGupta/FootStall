@@ -1,0 +1,45 @@
+<html>
+<script type="text/javascript" src="jquery.js">
+</script>
+<script>
+function myFunction()
+{
+var League_id;
+$.ajax({
+	url: "http://api.espn.com/v1/sports/soccer/eng.1/athletes",
+	data: {
+		// enter your developer api key here
+		apikey: "dj8m25y2ze94hqsjb2era2t5",
+		// the type of data you're expecting back from the api
+		_accept: "application/json"
+	},
+	dataType: "jsonp",
+	success: function(data) {
+	$.each(data.sports[0].leagues, function() {
+	League_id=this.id;
+	});
+		$.each(data.sports[0].leagues[0].athletes, function() {
+			var fname = this.firstName;
+			var lname = this.lastName;
+			var fullname = this.fullName;
+			var sname = this.shortName;
+			var id = this.id;
+			var title = this.abbreviation;
+			var dataString = 'firstName='+ fname + '&Player_id=' + id + '&lastName=' + lname + '&fullName=' + fullname  + '&shortName=' + sname + '&league_id=' + League_id;  
+		$.ajax({  
+      type: "POST",  
+       url: "insert_players.php",  
+       data: dataString,
+	 
+}); 
+});
+	},
+});
+}
+</script>
+<body>
+asd
+Arjit
+<button type="button" onclick="myFunction()">Try it</button>
+</body>
+<html>
